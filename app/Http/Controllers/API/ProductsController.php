@@ -31,11 +31,11 @@ class ProductsController extends Controller
     {
         $product = Product::find($id);
 
-       // dd($product->image);
+       
+        // dd($product->image);
 
         return json_decode($product->image);
 
-    
     }
 
 

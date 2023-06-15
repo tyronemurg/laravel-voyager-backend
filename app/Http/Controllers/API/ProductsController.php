@@ -22,7 +22,7 @@ class ProductsController extends Controller
 
         return Response::json($product);
 
-        dd($product);
+       // dd($product);
 
     
     }
@@ -31,7 +31,7 @@ class ProductsController extends Controller
     {
         $product = Product::find($id);
         //dump the product image
-         dd($product->image);
+        // dd($product->image);
         return json_decode($product->image);
 
     }

@@ -30,10 +30,8 @@ class ProductsController extends Controller
     public function getProductImages($id)
     {
         $product = Product::find($id);
-
-       
-        // dd($product->image);
-
+        //dump the product image
+         dd($product->image);
         return json_decode($product->image);
 
     }
